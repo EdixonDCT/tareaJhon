@@ -29,7 +29,7 @@ export const categoriaController = async () => {
         boton_eliminar.classList.add('boton','boton--rojo')
         //Agregamos el contenido de texto
         boton_editar.textContent = "Editar";
-        boton_editar.setAttribute('href',`editar/${id}`);
+        boton_editar.setAttribute('href',`#categorias/editar`);
         boton_eliminar.textContent = "Eliminar";
         div_botoneria.append(boton_editar,boton_eliminar);
         td_botoneria.append(div_botoneria);
