@@ -7,8 +7,10 @@ export const router =  async (elemento) => {
     ruta.controller();
 }
 const recorrerRutas = (routers, hast) => {
-    let lista = hast.split("/");
+    let lista = hast.split("/"); 
     let separador = (hast.split("/").length);
+    console.log(separador);
+    
     if (separador == 1) {
         for (const key in routers) {
         if (key == hast)
